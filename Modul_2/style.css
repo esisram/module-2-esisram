@@ -119,32 +119,6 @@ nav a {
   transition: ls;
 }
 
-@media screen and (max-width: 700px) {
-  .text-box h1 {
-    font-size: 20px;
-  }
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links ul li::after {
-    background: var(--text-primary-color);
-    display: block;
-  }
-  .nav-links ul li::after:hover {
-    width: 30%;
-  }
-  .nav-links {
-    position: absolute;
-    background: var(--background-header);
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: 0;
-    text-align: left;
-    z-index: 2;
-  }
-}
-
 .main {
   min-height: 100vh;
   width: 100%;
@@ -185,16 +159,95 @@ nav a {
 .slides {
   display: flex;
   overflow-x: auto;
-  overflow-x: auto;
+  overflow-y: auto;
 }
 .slides > div {
   display: flex;
   flex-shrink: 0;
   width: 100%;
-  height: 300px;
+  height: 450px;
   scroll-snap-align: start;
   scroll-behavior: smooth;
-  background: #74ABE2;
+  background: #74abe2;
   justify-content: center;
   align-items: center;
   font-size: 100px;
+}
+
+.sc5 .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 200px);
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.grid-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.item1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+.item2 {
+  grid-column: 3 / 5;
+  grid-row: 1 / 3;
+}
+
+.item3 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+.item4 {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+}
+
+.item5 {
+  grid-column: 4 / 5;
+  grid-row: 3 / 5;
+}
+
+.item6 {
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+}
+
+@media screen and (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links ul li::after {
+    background: var(--text-primary-color);
+    display: block;
+  }
+  .nav-links ul li::after:hover {
+    width: 30%;
+  }
+  .nav-links {
+    position: absolute;
+    background: var(--background-header);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+  }
+}

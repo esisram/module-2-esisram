@@ -1,0 +1,139 @@
+/* Global Setting  */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Body Setting */
+.container {
+  width: 100%;
+  overflow-y: scroll;
+  background-color: wheat;
+  color: #252525;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Setting */
+.header {
+  width: 100%;
+  height: 50vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items:s center;
+}
+.section-navbar {
+  width: 100%;
+  height: 5%;
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.section-content {
+  width: 100%;
+  height: 100%;
+  max-height: 1000px;
+  background: rgb(2, 184, 245);
+}
+.navbar {
+  border: solid 1px burlywood;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo a {
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.nav-links li a {
+  margin: 0 20px;
+  text-decoration: none;
+}
+.nav-links li a:hover {
+  background: rgb(168, 117, 117);
+  box-shadow: 5px 5px lightgray;
+  color: white;
+  cursor: pointer;
+  padding: 3px;
+}
+.header-btn {
+  max-width: 120px;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.header-btn:hover {
+  background: rgb(168, 117, 117);
+  box-shadow: 5px 5px lightgray;
+  cursor: pointer;
+}
+
+/* Main Setting */
+.M00001 {
+  border: solid 4px blue;
+  width: 80vw;
+  max-width: 1200px;
+  height: 150vh;
+  background-color: #fbfbfe;
+  opacity: 0.4;
+}
+.section-aboutus {
+  width: 100%;
+  height: 50%;
+  max-height: 1000px;
+  background: rgb(2, 184, 245);
+}
+.section-ourprograms {
+  width: 100%;
+  height: 50%;
+  max-height: 1000px;
+  background: red;
+}
+
+/* Footer */
+.F00001 {
+  width: 80vw;
+  max-width: 1200px;
+  border: solid 4px green;
+  height: 80vh;
+  background-color: white;
+  opacity: 0.4;
+}
+.section-contact {
+  width: 100%;
+  height: 50%;
+  max-height: 1000px;
+  background: rgb(2, 184, 245);
+}
+.section-form {
+  width: 100%;
+  height: 50%;
+  max-height: 1000px;
+  background: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 600px;
+  }
+}
+/* @media (max-width: 768px) {HP}*/
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { ipad }*/

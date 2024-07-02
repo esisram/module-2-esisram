@@ -2,7 +2,7 @@
 
 ### Hi, I'm [Esis Ramadhan](https://github.com/esisram) 👋
 
-<img src="./global_picture/profile_picture.jpg" alt="add relative path to image" 
+<img src="./images/readme_picture/profile_picture.jpg" alt="add relative path to image" 
 width="300" height='350'/>
 
 ## Authors

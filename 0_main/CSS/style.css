@@ -31,7 +31,6 @@ body {
   justify-content: center;
 }
 .navbar {
-  border: 2px solid wheat;
   width: 100%;
   max-width: 1200px;
   position: absolute;
@@ -44,6 +43,7 @@ body {
 }
 .navbar ul li {
   text-decoration: none;
+  list-style: none;
 }
 .header-btn {
   padding: 4px;
@@ -154,6 +154,10 @@ footer {
   background-image: radial-gradient(var(--background-header), var(--background-header), var(--text-secondary-color));
 }
 
-@import url('./style_tablet.css');
-@import url('./style_mobile.css');
+@media only screen and (max-width: 768px) {
+  @import url('./style_tablet.css');
+}
 
+@media only screen and (max-width: 480px) {
+  @import url('./style_mobile.css');
+}

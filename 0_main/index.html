@@ -1,68 +1,65 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NihonTravel</title>
+    <!-- App title -->
+    <title>FahimaDayCare</title>
+    <!-- Link Font Family file -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="navbar-container">
-      <nav class="navbar">
-        <h1 class="logo"><a href="./index.html">NihonTravel</a></h1>
-        <ul class="nav-links">
-          <li>Join now for an extra 10% Cash Back on purchases made in your first 7 days.*</li>
-        </ul>
-        <a href="#SignIn" class="header-btn">Sign In</a>
+    <section class="header">
+      <nav>
+        <a href="./index.html"><h1>FahimaDayCare</h1></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">PROGRAMS</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
       </nav>
-    </header>
-    <main class="grid-container">
-      <div id="items-1" class="grid-item">
-        <a href="../1_about_us/index.html">
-          <img
-            src="https://media.istockphoto.com/id/1060517676/photo/mount-fuji-at-lake-kawaguchiko-with-cherry-blossom-in-yamanashi-near-tokyo-japan.jpg?s=612x612&w=0&k=20&c=-BlzvRoJdQlD15n1RXKtsrDVp3NPzY_TnMmo8J6IJ6k="
-            alt="About Us"
-          />
-        </a>
-        <p class="text-overlay">About Us</p>
+
+      <div class="text-box">
+        <h1>Welcome to Fahima DayCare</h1>
+        <p>
+          We provide <mark>a safe, warm, and educational environment</mark> for your children. Here, children can learn,
+          play, and grow with the love and care of our professional caregivers.
+        </p>
+        <h2>More Detail</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sit aperiam. Ex, neque nobis magni
+          cupiditate maxime doloribus quaerat nam esse repudiandae deserunt adipisci recusandae fugit aspernatur rerum
+          delectus! Aliquid!
+        </p>
+        <a href="" class="hero-btn">Join Now</a>
       </div>
-      <div id="items-2" class="grid-item">
-        <a href="../2_Products/index.html">
-          <img
-            src="https://media.istockphoto.com/id/1137578281/photo/fuji-mountain-and-cherry-blossoms-in-spring-japan.jpg?s=612x612&w=0&k=20&c=H4T0916_yYJTjeKAaaLmYoQY3OMmaFShks6RfpYYVf4="
-            alt="Products"
-          />
-        </a>
-        <p class="text-overlay">Products</p>
-      </div>
-      <div id="items-3" class="grid-item">
-        <a href="../3_Services/index.html">
-          <img src="https://web-japan.org/top/img/mv_01.jpg" alt="Services" />
-        </a>
-        <p class="text-overlay">Services</p>
-      </div>
-      <div id="items-4" class="grid-item">
-        <a href="../4_Gallery/index.html">
-          <img src="https://media.timeout.com/images/105240237/image.jpg" alt="Gallery" />
-        </a>
-        <p class="text-overlay">Gallery</p>
-      </div>
-      <div id="items-5" class="grid-item">
-        <a href="../5_Contact/index.html">
-          <img
-            src="https://media.cnn.com/api/v1/images/stellar/prod/230210161917-01-japan-never-traveler-culture-tokyo.jpg?c=original"
-            alt="Contact"
-          />
-        </a>
-        <p class="text-overlay">Contact</p>
-      </div>
-    </main>
-    <footer></footer>
+    </section>
+    <section class="main">
+      <h1>Resize The browser window</h1>
+      <picture>
+        <source media="(min-width: 650px)" srcset="./images/user3.jpg" />
+        <source media="(min-width: 465px)" srcset="./images/user2.jpg" />
+        <img src="./images/user1.jpg" alt="User" style="width: 400px" />
+      </picture>
+      <figure>
+        <img id="filter" src="./images/background.jpg" width="50%" alt="background" />
+      </figure>
+    </section>
+    <div class="slides">
+      <div> 1 </div>
+      <div> 2 </div>
+      <div> 3 </div>
+    </div>    
+    </section>
   </body>
 </html>
